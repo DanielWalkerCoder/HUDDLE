@@ -1,0 +1,957 @@
+[
+  {
+    "word": "Alive",
+    "synonyms": ["lively", "quick", "alert", "awake", "vibrant"],
+    "antonyms": ["inert", "asleep", "lifeless"]
+  },
+  {
+    "word": "Anger",
+    "synonyms": ["wrath", "indignation"],
+    "antonyms": ["peace", "serenity", "contentment"]
+  },
+  {
+    "word": "Apple",
+    "synonyms": ["fruit", "pomme", "orchard", "snack", "produce"],
+    "antonyms": ["bread", "salty", "protein", "dairy"]
+  },
+  {
+    "word": "Arrow",
+    "synonyms": ["shaft", "missile", "projectile"],
+    "antonyms": ["shield", "defense", "guard", "protection", "safety"]
+  },
+  {
+    "word": "Angel",
+    "synonyms": ["fairy", "spirit", "cherub", "divine", "heavenly"],
+    "antonyms": ["demon", "devil", "fiend", "hellish", "malevolent"]
+  },
+  {
+    "word": "Ample",
+    "synonyms": ["plentiful", "abundant", "sufficient", "copious", "plenty"],
+    "antonyms": ["scarce", "insufficient", "meager", "inadequate", "sparse"]
+  },
+  {
+    "word": "Acute",
+    "synonyms": ["sharp", "penetrating", "intense", "severe"],
+    "antonyms": ["blunt", "gradual", "chronic"]
+  },
+  {
+    "word": "Abode",
+    "synonyms": ["dwelling", "residence", "house", "habitat"],
+    "antonyms": ["homeless", "transient", "vagrant", "roaming"]
+  },
+  {
+    "word": "Aloof",
+    "synonyms": ["distant", "reserved", "detached", "remote", "withdrawn"],
+    "antonyms": ["friendly", "sociable", "approachable", "engaging"]
+  },
+  {
+    "word": "Adapt",
+    "synonyms": ["adjust", "modify", "alter", "change", "evolve"],
+    "antonyms": ["maintain", "preserve", "retain", "stagnate"]
+  },
+  {
+    "word": "Alias",
+    "synonyms": ["false", "pseudonym", "nickname", "moniker", "alternative"],
+    "antonyms": ["genuine", "authentic", "actual"]
+  },
+  {
+    "word": "Amend",
+    "synonyms": ["repair", "correct", "rectify", "revise"],
+    "antonyms": ["damage", "destroy", "impair", "worsen"]
+  },
+  {
+    "word": "Annex",
+    "synonyms": ["attach", "append", "connect"],
+    "antonyms": ["remove", "detach", "disconnect", "separate", "divide"]
+  },
+  {
+    "word": "Awake",
+    "synonyms": ["alert", "aware", "conscious", "vigilant", "awakened"],
+    "antonyms": ["asleep", "unconscious", "oblivious", "drowsy", "unaware"]
+  },
+  {
+    "word": "Avoid",
+    "synonyms": ["evade", "dodge", "escape", "elude"],
+    "antonyms": ["confront", "encounter", "confrontation", "embrace"]
+  },
+  {
+    "word": "Amuse",
+    "synonyms": ["entertain", "delight", "charm", "please", "captivate"],
+    "antonyms": ["irritate", "annoy", "dissatisfy", "displease"]
+  },
+  {
+    "word": "Affix",
+    "synonyms": ["attach", "fasten", "stick", "connect"],
+    "antonyms": ["detach", "remove", "unfasten", "separate", "disconnect"]
+  },
+  {
+    "word": "Aloft",
+    "synonyms": ["above", "elevated", "skyward", "upward"],
+    "antonyms": ["below", "beneath", "under"]
+  },
+  {
+    "word": "Adept",
+    "synonyms": ["skilled", "expert", "proficient", "capable", "talented"],
+    "antonyms": ["novice", "beginner", "inexperienced", "unskilled", "amateur"]
+  },
+  {
+    "word": "Alarm",
+    "synonyms": ["alert", "warning", "signal", "siren"],
+    "antonyms": ["peace", "serenity", "tranquility", "quiet"]
+  },
+  {
+    "word": "Bloom",
+    "synonyms": ["flower", "blossom", "bloom", "blossom", "flourish"],
+    "antonyms": ["decay", "wither", "deteriorate"]
+  },
+  {
+    "word": "Blend",
+    "synonyms": ["merge", "combine", "unite"],
+    "antonyms": ["separate", "divide", "detach", "split", "disunite"]
+  },
+  {
+    "word": "Brain",
+    "synonyms": ["intellect", "cognition", "intellectual", "brainpower"],
+    "antonyms": ["brawn", "physical", "muscle", "strength"]
+  },
+  {
+    "word": "Baker",
+    "synonyms": ["pastry", "confectioner", "patisserie"],
+    "antonyms": ["customer", "diner", "guest", "client", "patron"]
+  },
+  {
+    "word": "Burst",
+    "synonyms": ["explode", "burst", "rupture", "split", "shatter"],
+    "antonyms": ["contain", "restrain", "control", "suppress", "restrain"]
+  },
+  {
+    "word": "Belly",
+    "synonyms": ["stomach", "abdomen", "tummy", "paunch"],
+    "antonyms": ["spine", "backbone", "vertebrae"]
+  },
+  {
+    "word": "Bough",
+    "synonyms": ["branch", "bough"],
+    "antonyms": ["trunk", "center"]
+  },
+  {
+    "word": "Badge",
+    "synonyms": ["emblem", "insignia", "medal", "decoration"],
+    "antonyms": ["dishonor", "disgrace", "shame", "stigma", "blemish"]
+  },
+  {
+    "word": "Brush",
+    "synonyms": ["sweep", "scrub", "clean", "brush", "scrub"],
+    "antonyms": ["dirty", "smudge", "stain", "smear", "soil"]
+  },
+  {
+    "word": "Bunch",
+    "synonyms": ["cluster", "group", "bundle", "bunch", "clump"],
+    "antonyms": ["individual", "single", "solitary", "alone"]
+  },
+  {
+    "word": "Bliss",
+    "synonyms": ["happiness", "ecstasy", "delight", "euphoria"],
+    "antonyms": ["misery", "sorrow", "despair", "anguish", "grief"]
+  },
+  {
+    "word": "Brave",
+    "synonyms": ["courageous", "fearless", "valiant", "daring"],
+    "antonyms": ["cowardly", "timid", "fearful", "faint-hearted"]
+  },
+  {
+    "word": "Bound",
+    "synonyms": ["limit", "boundary", "confine", "border"],
+    "antonyms": ["unbounded", "unlimited", "infinite", "unconfined", "endless"]
+  },
+  {
+    "word": "Brief",
+    "synonyms": ["short", "concise", "succinct", "summary", "compact"],
+    "antonyms": ["lengthy", "extended", "detailed", "elaborate"]
+  },
+  {
+    "word": "Catch",
+    "synonyms": ["seize", "capture", "entrap"],
+    "antonyms": ["release", "liberate"]
+  },
+  {
+    "word": "Charm",
+    "synonyms": ["enchant", "bewitch", "captivate", "fascinate", "entrance"],
+    "antonyms": ["repel", "disenchant", "repulse", "disgust"]
+  },
+  {
+    "word": "Crush",
+    "synonyms": ["squash", "smash", "pulverize", "crumble", "grind"],
+    "antonyms": ["build", "construct", "create", "develop"]
+  },
+  {
+    "word": "Clean",
+    "synonyms": ["spotless", "fresh"],
+    "antonyms": ["dirty", "messy", "filthy", "stained", "unclean"]
+  },
+  {
+    "word": "Crazy",
+    "synonyms": ["insane", "deranged", "lunatic"],
+    "antonyms": ["rational", "sensible", "normal", "reasonable"]
+  },
+  {
+    "word": "Craft",
+    "synonyms": ["skill", "handiwork", "craftsmanship", "trade"],
+    "antonyms": ["clumsiness", "ineptitude", "incompetence", "amateurishness", "unskillfulness"]
+  },
+  {
+    "word": "Cloud",
+    "synonyms": ["vapor"],
+    "antonyms": ["clear", "sunny", "bright", "unclouded"]
+  },
+  {
+    "word": "Crown",
+    "synonyms": ["coronet", "diadem", "tiara", "headpiece", "headdress"],
+    "antonyms": ["bottom", "foundation"]
+  },
+  {
+    "word": "Curve",
+    "synonyms": ["twist"],
+    "antonyms": ["straight", "direct", "level"]
+  },
+  {
+    "word": "Cling",
+    "synonyms": ["adhere", "stick", "attach"],
+    "antonyms": ["release", "detach", "unstick", "separate"]
+  },
+  {
+    "word": "Crash",
+    "synonyms": ["collision", "smash", "accident", "wreck", "impact"],
+    "antonyms": ["smooth", "unhurt", "undamaged", "intact"]
+  },
+  {
+    "word": "Creak",
+    "synonyms": ["squeak", "groan", "grate", "screech", "creak"],
+    "antonyms": ["silence", "quiet", "stillness", "peace"]
+  },
+  {
+    "word": "Curse",
+    "synonyms": ["swear", "profanity", "imprecation", "blasphemy"],
+    "antonyms": ["bless", "benediction", "prayer", "benedict", "blessing"]
+  },
+  {
+    "word": "Clink",
+    "synonyms": ["clank", "clang", "clatter", "jingle", "chink"],
+    "antonyms": ["silence", "quiet", "stillness", "peace"]
+  },
+  {
+    "word": "Candy",
+    "synonyms": ["sweets", "confectionery", "treats", "bonbons", "candies"],
+    "antonyms": ["bitter", "unsweetened", "unpleasant", "harsh"]
+  },
+  {
+    "word": "Chill",
+    "synonyms": ["chilly", "frosty", "freezing"],
+    "antonyms": ["warmth", "toasty", "sweltering"]
+  },
+  {
+    "word": "Dream",
+    "synonyms": ["vision", "fantasy", "imagination", "hallucination", "illusion"],
+    "antonyms": ["reality", "awake", "consciousness", "truth", "actuality"]
+  },
+  {
+    "word": "Doubt",
+    "synonyms": ["uncertainty", "skepticism", "distrust", "suspicion", "hesitation"],
+    "antonyms": ["certainty", "belief", "trust", "confidence", "conviction"]
+  },
+  {
+    "word": "Dense",
+    "synonyms": ["thick", "compact", "concentrated", "crowded", "intense"],
+    "antonyms": ["sparse", "dilute", "scattered", "loose"]
+  },
+  {
+    "word": "Dread",
+    "synonyms": ["terror", "horror", "apprehension", "alarm"],
+    "antonyms": ["courage", "bravery", "fearlessness", "confidence"]
+  },
+  {
+    "word": "Drive",
+    "synonyms": ["motivate", "propel", "impel", "compel"],
+    "antonyms": ["deter", "dissuade", "discourage", "restrain", "inhibit"]
+  },
+  {
+    "word": "Droop",
+    "synonyms": ["languish", "dangle", "slump"],
+    "antonyms": ["straighten", "upright", "stiffen"]
+  },
+  {
+    "word": "Drain",
+    "synonyms": ["empty", "deplete", "exhaust"],
+    "antonyms": ["replenish", "refill", "stock", "saturate"]
+  },
+  {
+    "word": "Draft",
+    "synonyms": ["outline", "sketch", "proposal", "rough"],
+    "antonyms": ["final", "completed", "finished", "polished", "perfected"]
+  },
+  {
+    "word": "Douse",
+    "synonyms": ["extinguish", "quench", "smother", "snuff out", "dampen"],
+    "antonyms": ["ignite", "kindle", "light", "inflame"]
+  },
+  {
+    "word": "Dodge",
+    "synonyms": ["evade", "avoid", "elude", "shirk", "ditch"],
+    "antonyms": ["confront", "address", "encounter", "confrontation"]
+  },
+  {
+    "word": "Dress",
+    "synonyms": ["attire", "clothing", "apparel", "outfit"],
+    "antonyms": ["undress", "strip", "naked", "disrobe"]
+  },
+  {
+    "word": "Drift",
+    "synonyms": ["float", "glide", "slide", "wander", "meander"],
+    "antonyms": ["remain", "fixed", "anchored", "stationary"]
+  },
+  {
+    "word": "Drown",
+    "synonyms": ["submerge", "immerse", "suffocate", "engulf", "overwhelm"],
+    "antonyms": ["rescue", "assist"]
+  },
+  {
+    "word": "Drape",
+    "synonyms": ["cover", "cloak", "shroud"],
+    "antonyms": ["uncover", "reveal", "expose", "disclose", "unveil"]
+  },
+  {
+    "word": "Dusty",
+    "synonyms": ["powdery", "dirty", "gritty", "sandy", "filthy"],
+    "antonyms": ["clean", "spotless", "unsoiled"]
+  },
+  {
+    "word": "Empty",
+    "synonyms": ["vacant", "hollow", "deserted"],
+    "antonyms": ["occupied", "filled", "loaded", "replete"]
+  },
+  {
+    "word": "Exact",
+    "synonyms": ["precise", "accurate", "correct", "meticulous", "rigorous"],
+    "antonyms": ["approximate", "inexact", "imprecise", "rough", "vague"]
+  },
+  {
+    "word": "Eager",
+    "synonyms": ["enthusiastic", "zealous", "passionate"],
+    "antonyms": ["indifferent", "apathetic", "uninterested", "reluctant", "unenthusiastic"]
+  },
+  {
+    "word": "Error",
+    "synonyms": ["mistake", "fault", "blunder", "miscalculation"],
+    "antonyms": ["accuracy", "correctness", "precision", "perfection", "rightness"]
+  },
+  {
+    "word": "Earth",
+    "synonyms": ["ground", "terrain"],
+    "antonyms": ["heaven", "celestial", "space", "atmosphere"]
+  },
+  {
+    "word": "Edge",
+    "synonyms": ["border", "boundary", "perimeter", "margin"],
+    "antonyms": ["center", "interior", "middle", "heart"]
+  },
+  {
+    "word": "Early",
+    "synonyms": ["premature", "untimely", "precocious", "advance", "prematurely"],
+    "antonyms": ["delayed", "behind schedule", "tardy", "belated"]
+  },
+  {
+    "word": "Evoke",
+    "synonyms": ["elicit", "arouse", "awaken", "stimulate", "invoke"],
+    "antonyms": ["suppress", "quell", "stifle", "repress", "subdue"]
+  },
+  {
+    "word": "Enter",
+    "synonyms": ["arrive", "access", "penetrate"],
+    "antonyms": ["leave", "depart", "withdraw", "retreat"]
+  },
+  {
+    "word": "Extra",
+    "synonyms": ["additional", "supplementary", "further", "added", "bonus"],
+    "antonyms": ["basic", "essential", "necessary", "fundamental", "primary"]
+  },
+  {
+    "word": "Error",
+    "synonyms": ["mistake", "fault", "blunder", "miscalculation"],
+    "antonyms": ["accuracy", "correctness", "precision", "perfection", "rightness"]
+  },
+  {
+    "word": "Earth",
+    "synonyms": ["ground", "terrain"],
+    "antonyms": ["heaven", "celestial", "space", "atmosphere"]
+  },
+  {
+    "word": "Enemy",
+    "synonyms": ["foe", "adversary", "opponent", "antagonist", "rival"],
+    "antonyms": ["ally", "friend", "comrade", "supporter", "confederate"]
+  },
+  {
+    "word": "Equal",
+    "synonyms": ["equivalent", "even", "identical", "alike", "uniform"],
+    "antonyms": ["unequal", "different", "disparate", "uneven", "varying"]
+  },
+  {
+    "word": "Event",
+    "synonyms": ["occasion", "happening", "incident", "occasion", "occurrence"],
+    "antonyms": ["non-event", "inactivity", "dullness", "stagnation", "quiescence"]
+  },
+  {
+    "word": "Fault",
+    "synonyms": ["error", "mistake", "blunder", "defect"],
+    "antonyms": ["virtue", "merit", "perfection", "excellence", "strength"]
+  },
+  {
+    "word": "Fancy",
+    "synonyms": ["imagine", "conceive", "visualize", "fantasize", "dream"],
+    "antonyms": ["dislike", "abhor", "loathe", "despise"]
+  },
+  {
+    "word": "Frost",
+    "synonyms": ["freeze", "hoarfrost", "chill", "freeze"],
+    "antonyms": ["warmth", "thawing"]
+  },
+  {
+    "word": "Flour",
+    "synonyms": ["powder", "grind", "crush"],
+    "antonyms": ["solid", "chunk", "block"]
+  },
+  {
+    "word": "Frown",
+    "synonyms": ["scowl", "glower", "grimace"],
+    "antonyms": ["smile", "laugh", "smirk"]
+  },
+  {
+    "word": "Forge",
+    "synonyms": ["create", "build", "fabricate", "manufacture"],
+    "antonyms": ["destroy", "demolish", "dismantle", "disassemble"]
+  },
+  {
+    "word": "Flash",
+    "synonyms": ["spark", "glint", "twinkle", "gleam", "flare"],
+    "antonyms": ["obscure", "gloom"]
+  },
+  {
+    "word": "Frame",
+    "synonyms": ["structure", "framework", "skeleton", "outline", "shape"],
+    "antonyms": ["disorder", "chaos", "jumble", "disarray"]
+  },
+  {
+    "word": "Faith",
+    "synonyms": ["belief", "trust", "confidence", "conviction", "credence"],
+    "antonyms": ["doubt", "skepticism", "disbelief", "suspicion", "cynicism"]
+  },
+  {
+    "word": "Fetch",
+    "synonyms": ["retrieve", "bring", "bring back"],
+    "antonyms": ["carry", "transport", "deliver"]
+  },
+  {
+    "word": "Force",
+    "synonyms": ["power", "strength", "might", "energy", "vigor"],
+    "antonyms": ["weakness", "feebleness", "impotence", "powerlessness", "frailty"]
+  },
+  {
+    "word": "Flame",
+    "synonyms": ["blaze", "inferno", "torch"],
+    "antonyms": ["frost", "freeze", "chill"]
+  },
+  {
+    "word": "Flute",
+    "synonyms": ["whistle", "flageolet", "piccolo"],
+    "antonyms": ["guitar", "violin", "trumpet", "saxophone"]
+  },
+  {
+    "word": "Grace",
+    "synonyms": ["elegance", "charm", "poise", "beauty", "gracefulness"],
+    "antonyms": ["clumsiness", "awkwardness", "inelegance", "crudeness", "coarseness"]
+  },
+  {
+    "word": "Great",
+    "synonyms": ["immense", "enormous", "massive", "gigantic"],
+    "antonyms": ["small", "little", "minute", "diminutive"]
+  },
+  {
+    "word": "Giant",
+    "synonyms": ["colossal", "massive", "monstrous", "enormous", "titanic"],
+    "antonyms": ["dwarf", "diminutive", "miniature", "petite"]
+  },
+  {
+    "word": "Grain",
+    "synonyms": ["kernel", "particle", "granule", "morsel"],
+    "antonyms": ["chunk"]
+  },
+  {
+    "word": "Grief",
+    "synonyms": ["sorrow", "sadness", "mourning", "anguish", "heartache"],
+    "antonyms": ["happiness", "elation", "contentment"]
+  },
+  {
+    "word": "Guard",
+    "synonyms": ["protect", "defend", "watch", "safeguard", "shield"],
+    "antonyms": ["attack", "assail", "assault", "endanger", "expose"]
+  },
+  {
+    "word": "Glare",
+    "synonyms": ["stare", "glower", "scowl"],
+    "antonyms": ["avert", "ignore", "disregard"]
+  },
+  {
+    "word": "Grove",
+    "synonyms": ["forest", "copse", "thicket", "woods"],
+    "antonyms": ["clearing", "plain", "meadow", "field", "prairie"]
+  },
+  {
+    "word": "Grasp",
+    "synonyms": ["clutch", "seize", "grapple"],
+    "antonyms": ["release", "loosen", "relinquish"]
+  },
+  {
+    "word": "Green",
+    "synonyms": ["emerald", "viridian", "verdant"],
+    "antonyms": ["yellow", "orange", "violet"]
+  },
+  {
+    "word": "Group",
+    "synonyms": ["bunch", "cluster", "collection", "assembly"],
+    "antonyms": ["individual", "alone", "single", "singly"]
+  },
+  {
+    "word": "Grade",
+    "synonyms": ["level", "degree", "class"],
+    "antonyms": ["inferior", "lower", "substandard", "lesser", "below"]
+  },
+  {
+    "word": "Guest",
+    "synonyms": ["visitor", "company", "invitee", "attendee", "caller"],
+    "antonyms": ["resident", "inhabitant", "owner", "occupant"]
+  },
+  {
+    "word": "Guide",
+    "synonyms": ["direct", "steer", "usher"],
+    "antonyms": ["mislead", "misdirect", "misguide", "deceive", "confuse"]
+  },
+  {
+    "word": "Grave",
+    "synonyms": ["sepulcher", "cemetery", "burial", "crypt"],
+    "antonyms": ["alive", "living", "lively", "animated", "vibrant"]
+  },
+  {
+    "word": "Greet",
+    "synonyms": ["welcome", "salute", "acknowledge", "address"],
+    "antonyms": ["farewell", "goodbye", "depart", "leave"]
+  },
+  {
+	"word": "Grind",
+    "synonyms": ["crush", "pulverize", "pound"],
+    "antonyms": ["smooth", "polish"]  
+  },
+  {
+    "word": "Happy",
+    "synonyms": ["joyful", "cheerful", "delighted", "content", "pleased"],
+    "antonyms": ["unhappy", "miserable", "gloomy", "depressed"]
+  },
+  {
+    "word": "Heart",
+    "synonyms": ["center", "essence", "spirit"],
+    "antonyms": ["periphery", "margin", "exterior", "boundary"]
+  },
+  {
+    "word": "House",
+    "synonyms": ["residence", "dwelling", "abode", "domicile"],
+    "antonyms": ["outside", "street", "exposed", "unsheltered"]
+  },
+  {
+    "word": "Heavy",
+    "synonyms": ["weighty", "massive", "burdensome", "ponderous", "dense"],
+    "antonyms": ["light", "lightweight", "featherweight", "flimsy"]
+  },
+  {
+    "word": "Honor",
+    "synonyms": ["respect", "admiration", "esteem", "reverence", "glory"],
+    "antonyms": ["dishonor", "disrespect", "disgrace", "shame", "humiliation"]
+  },
+  {
+    "word": "Human",
+    "synonyms": ["person", "individual", "woman", "mortal"],
+    "antonyms": ["animal", "nonhuman", "inhuman", "beast", "creature"]
+  },
+  {
+    "word": "Hotel",
+    "synonyms": ["lodging", "motel", "hostelry", "guesthouse"],
+    "antonyms": ["residence", "dwelling", "abode", "domicile"]
+  },
+  {
+    "word": "Ideal",
+    "synonyms": ["perfect", "optimal", "excellent", "model", "utopian"],
+    "antonyms": ["imperfect", "flawed", "suboptimal", "inferior", "impractical"]
+  },
+  {
+    "word": "Image",
+    "synonyms": ["picture", "photo", "representation", "portrait", "depiction"],
+    "antonyms": ["reality", "truth", "actuality", "substance", "essence"]
+  },
+  {
+    "word": "Issue",
+    "synonyms": ["problem", "concern", "topic", "matter", "subject"],
+    "antonyms": ["solution", "resolution", "answer", "settlement", "conclusion"]
+  },
+  {
+    "word": "Infer",
+    "synonyms": ["deduce", "conclude", "derive", "gather", "presume"],
+    "antonyms": ["speculate", "guess", "surmise", "hypothesize", "conjecture"]
+  },
+  {
+    "word": "Index",
+    "synonyms": ["catalog", "register", "directory", "inventory"],
+    "antonyms": ["disorder", "randomness", "confusion", "disarray"]
+  },
+  {
+    "word": "Input",
+    "synonyms": ["information", "entry", "feedback", "contribution"],
+    "antonyms": ["output", "result", "outcome", "product", "consequence"]
+  },
+  {
+    "word": "Joint",
+    "synonyms": ["connection", "junction", "intersection"],
+    "antonyms": ["separate", "disconnect", "dissociate", "unlink", "detach"]
+  },
+  {
+    "word": "Judge",
+    "synonyms": ["evaluate", "assess", "appraise", "discern", "determine"],
+    "antonyms": ["guess", "speculate", "conjecture", "surmise", "assume"]
+  },
+  {
+    "word": "Juicy",
+    "synonyms": ["succulent", "luscious", "delicious", "flavorful"],
+    "antonyms": ["tasteless", "unsavory", "bland", "unappetizing"]
+  },
+  {
+    "word": "Jolly",
+    "synonyms": ["merry", "cheerful", "joyful", "lively", "festive"],
+    "antonyms": ["gloomy", "miserable", "depressed", "melancholy"]
+  },
+  {
+    "word": "Known",
+    "synonyms": ["recognized", "familiar", "acknowledged", "established", "noted"],
+    "antonyms": ["unknown", "unfamiliar", "unrecognized", "obscure", "anonymous"]
+  },
+  {
+    "word": "Knife",
+    "synonyms": ["blade", "cutlery", "dagger", "shank"],
+    "antonyms": ["blunt", "edgeless", "unsharpened", "blunted"]
+  },
+  {
+    "word": "Knead",
+    "synonyms": ["massage", "manipulate", "press"],
+    "antonyms": ["leave", "neglect", "ignore", "abandon", "disregard"]
+  },
+  {
+    "word": "Knots",
+    "synonyms": ["bonds", "links", "fastenings", "ligatures"],
+    "antonyms": ["loosen", "untie", "unfasten", "unbind"]
+  },
+  {
+    "word": "Light",
+    "synonyms": ["bright", "radiant", "luminous", "shiny", "gleaming"],
+    "antonyms": ["gloomy", "obscure"]
+  },
+  {
+    "word": "Lucky",
+    "synonyms": ["fortunate", "blessed", "lucrative", "auspicious", "privileged"],
+    "antonyms": ["unlucky", "unfortunate", "cursed", "unlucrative"]
+  },
+  {
+    "word": "Large",
+    "synonyms": ["gigantic", "massive", "enormous"],
+    "antonyms": ["small", "little", "miniature", "diminutive"]
+  },
+  {
+    "word": "Loyal",
+    "synonyms": ["faithful", "devoted", "committed", "dedicated", "steadfast"],
+    "antonyms": ["disloyal", "unfaithful", "treacherous", "faithless", "traitorous"]
+  },
+  {
+    "word": "Magic",
+    "synonyms": ["sorcery", "enchantment", "wizardry", "conjuring", "witchcraft"],
+    "antonyms": ["reality", "truth", "certainty", "authenticity"]
+  },
+  {
+    "word": "Major",
+    "synonyms": ["significant", "important", "principal", "primary", "paramount"],
+    "antonyms": ["minor", "insignificant", "trivial", "secondary", "lesser"]
+  },
+  {
+    "word": "Music",
+    "synonyms": ["melody", "harmony", "rhythm"],
+    "antonyms": ["silence", "noise", "cacophony", "disharmony", "discord"]
+  },
+  {
+    "word": "Mirth",
+    "synonyms": ["happiness", "cheerfulness", "joviality"],
+    "antonyms": ["sadness", "misery", "gloom", "melancholy", "despair"]
+  },
+  {
+    "word": "March",
+    "synonyms": ["advance", "proceed", "progress"],
+    "antonyms": ["retreat", "backtrack", "recede", "withdraw", "regress"]
+  },
+  {
+    "word": "Noise",
+    "synonyms": ["sound", "clamor", "racket", "commotion"],
+    "antonyms": ["quiet", "silence", "peace", "serenity"]
+  },
+  {
+    "word": "Noble",
+    "synonyms": ["honorable", "virtuous", "righteous", "upright", "dignified"],
+    "antonyms": ["ignoble", "dishonorable", "unworthy", "vulgar"]
+  },
+  {
+    "word": "Nurse",
+    "synonyms": ["caregiver", "attendant", "nurturer", "sitter", "nanny"],
+    "antonyms": ["neglect", "abandon", "ignore", "disregard", "negligence"]
+  },
+  {
+    "word": "Often",
+    "synonyms": ["frequently", "regularly", "commonly", "habitually", "repeatedly"],
+    "antonyms": ["rarely", "seldom", "infrequently", "occasionally", "sporadically"]
+  },
+  {
+    "word": "Order",
+    "synonyms": ["sequence", "arrangement", "organization", "structure", "system"],
+    "antonyms": ["disorder", "chaos", "confusion", "disarray"]
+  },
+  {
+    "word": "Offer",
+    "synonyms": ["present", "provide", "supply", "extend"],
+    "antonyms": ["refuse", "decline", "reject", "withhold"]
+  },
+  {
+    "word": "Oasis",
+    "synonyms": ["haven", "sanctuary", "retreat", "shelter", "refuge"],
+    "antonyms": ["desert", "wasteland", "wilderness", "barrenness", "void"]
+  },
+  {
+    "word": "Outer",
+    "synonyms": ["external", "outside", "exterior", "outward", "surface"],
+    "antonyms": ["inner", "internal", "inside", "interior", "inward"]
+  },
+  {
+    "word": "Peace",
+    "synonyms": ["tranquility", "harmony", "serenity", "quiet"],
+    "antonyms": ["conflict", "turmoil", "chaos", "disorder"]
+  },
+  {
+    "word": "Power",
+    "synonyms": ["authority", "control", "dominance", "might", "strength"],
+    "antonyms": ["weakness", "impotence", "inability", "vulnerability", "fragility"]
+  },
+  {
+    "word": "Proud",
+    "synonyms": ["arrogant", "haughty", "conceited", "egotistical"],
+    "antonyms": ["humble", "modest", "unassuming", "reserved"]
+  },
+  {
+    "word": "Panic",
+    "synonyms": ["alarm", "terror", "dread", "fright"],
+    "antonyms": ["composure", "serenity", "tranquility", "relaxation"]
+  },
+  {
+    "word": "Pleat",
+    "synonyms": ["crease", "wrinkle", "pucker"],
+    "antonyms": ["smooth", "flatten", "unfold", "unwrinkle"]
+  },
+  {
+    "word": "Quiet",
+    "synonyms": ["silent", "peaceful", "serene", "tranquil"],
+    "antonyms": ["noisy", "boisterous", "clamorous", "raucous"]
+  },
+  {
+    "word": "Quick",
+    "synonyms": ["rapid", "swift", "speedy", "prompt"],
+    "antonyms": ["leisurely", "gradual", "sluggish", "languid"]
+  },
+  {
+    "word": "Queen",
+    "synonyms": ["monarch", "sovereign", "ruler", "empress", "regent"],
+    "antonyms": ["subject", "commoner", "peasant", "citizen"]
+  },
+  {
+    "word": "Rapid",
+    "synonyms": ["quick", "swift", "speedy", "hasty"],
+    "antonyms": ["gradual", "leisurely", "unhurried", "plodding"]
+  },
+  {
+    "word": "Ready",
+    "synonyms": ["prepared", "willing", "eager", "prompt"],
+    "antonyms": ["unprepared", "unwilling", "reluctant", "hesitant", "delayed"]
+  },
+  {
+    "word": "Rural",
+    "synonyms": ["countryside", "rustic", "country", "agrarian", "pastoral"],
+    "antonyms": ["urban", "metropolitan", "suburban", "cosmopolitan"]
+  },
+  {
+    "word": "Risky",
+    "synonyms": ["dangerous", "hazardous", "perilous", "unsafe", "precarious"],
+    "antonyms": ["secure", "protected", "stable", "reliable"]
+  },
+  {
+    "word": "Rigid",
+    "synonyms": ["stiff", "inflexible", "unbending"],
+    "antonyms": ["flexible", "pliable", "limber", "yielding"]
+  },
+  {
+        "word": "Scale",
+        "synonyms": ["extent", "magnitude", "proportion", "scope"],
+        "antonyms": ["minimize", "decrease", "reduce", "diminish", "shrink"]
+    },
+    {
+        "word": "Solve",
+        "synonyms": ["resolve", "settle", "answer", "decipher", "unravel"],
+        "antonyms": ["complicate", "confound", "obfuscate", "perplex", "bewilder"]
+    },
+    {
+        "word": "Shift",
+        "synonyms": ["change", "transfer", "adjust", "relocate"],
+        "antonyms": ["stabilize", "maintain", "remain"]
+    },
+    {
+        "word": "Sharp",
+        "synonyms": ["acute", "pointed", "penetrating", "crisp"],
+        "antonyms": ["blunt", "rounded", "obtuse"]
+    },
+    {
+        "word": "Swear",
+        "synonyms": ["promise", "pledge", "declare", "assert"],
+        "antonyms": ["repudiate", "recant", "disavow", "renounce"]
+  },
+  {
+        "word": "Trial",
+        "synonyms": ["experiment", "attempt", "evaluation", "assessment"],
+        "antonyms": ["certainty", "guarantee", "assurance", "confidence", "conviction"]
+    },
+    {
+        "word": "Taste",
+        "synonyms": ["flavor", "savor", "palate", "sensation", "perception"],
+        "antonyms": ["disgust", "aversion", "repulsion", "distaste", "detestation"]
+    },
+    {
+        "word": "Track",
+        "synonyms": ["trail", "route", "course"],
+        "antonyms": ["detour", "deviation", "diversion", "straying", "wandering"]
+    },
+    {
+        "word": "Trust",
+        "synonyms": ["confidence", "belief", "faith", "reliance", "conviction"],
+        "antonyms": ["doubt", "suspicion", "distrust", "skepticism", "uncertainty"]
+    },
+    {
+        "word": "Tense",
+        "synonyms": ["stressed", "anxious", "nervous", "strained", "uptight"],
+        "antonyms": ["relaxed", "easygoing", "unwound", "loose"]
+  },
+  {
+        "word": "Usage",
+        "synonyms": ["utilization", "employment", "application", "practice"],
+        "antonyms": ["disuse", "neglect", "abandonment", "nonuse", "inactivity"]
+    },
+    {
+        "word": "Unity",
+        "synonyms": ["oneness", "harmony", "cohesion", "solidarity", "unanimity"],
+        "antonyms": ["disunity", "division", "disagreement", "discord", "disharmony"]
+    },
+    {
+        "word": "Usher",
+        "synonyms": ["guide", "escort", "conduct", "pilot"],
+        "antonyms": ["mislead", "abandon", "neglect", "misguide", "leave"]
+    },
+    {
+        "word": "Upper",
+        "synonyms": ["higher", "superior", "uppermost", "overhead"],
+        "antonyms": ["lower", "under", "bottom", "beneath", "inferior"]
+    },
+    {
+        "word": "Usual",
+        "synonyms": ["normal", "typical", "ordinary", "common", "conventional"],
+        "antonyms": ["unusual", "atypical", "uncommon", "extraordinary", "exceptional"]
+  },
+  {
+        "word": "Value",
+        "synonyms": ["worth", "importance", "significance", "merit", "esteem"],
+        "antonyms": ["worthlessness", "insignificance", "triviality", "negligence", "disregard"]
+    },
+    {
+        "word": "Voice",
+        "synonyms": ["speech", "sound", "vocalization", "utterance", "expression"],
+        "antonyms": ["silence", "quiet", "stillness"]
+    },
+    {
+        "word": "Vivid",
+        "synonyms": ["bright", "colorful", "vibrant", "lively", "distinct"],
+        "antonyms": ["lifeless", "indistinct"]
+    },
+    {
+        "word": "Vague",
+        "synonyms": ["unclear", "indefinite", "ambiguous", "obscure"],
+        "antonyms": ["clear", "precise", "explicit", "definite", "distinct"]
+  },
+  {
+        "word": "Waste",
+        "synonyms": ["squander", "consume", "expend", "deplete"],
+        "antonyms": ["conserve", "preserve", "hoard", "store"]
+    },
+    {
+        "word": "Worth",
+        "synonyms": ["value", "merit", "esteem", "importance", "significance"],
+        "antonyms": ["worthlessness", "insignificance", "triviality", "negligence", "disregard"]
+    },
+    {
+        "word": "Water",
+        "synonyms": ["liquid", "aquatic", "fluid", "moisture"],
+        "antonyms": ["dehydrate", "thirst", "desiccate", "parch"]
+    },
+    {
+        "word": "Weary",
+        "synonyms": ["tired", "exhausted", "fatigued", "spent", "drained"],
+        "antonyms": ["refreshed", "energetic", "rested", "invigorated", "rejuvenated"]
+    },
+    {
+        "word": "Worry",
+        "synonyms": ["anxiety", "concern", "distress", "unease"],
+        "antonyms": ["peace", "tranquility", "serenity", "composure"]
+  },
+  {
+        "word": "Xerox",
+        "synonyms": ["duplicate", "reproduce", "replicate", "imitate"],
+        "antonyms": ["original", "authentic", "genuine", "unique", "distinct"]
+  },
+  {
+        "word": "Yield",
+        "synonyms": ["produce", "generate", "render", "surrender"],
+        "antonyms": ["resist", "withhold", "retain"]
+    },
+    {
+        "word": "Yacht",
+        "synonyms": ["vessel", "craft", "sailboat"],
+        "antonyms": ["beach"]
+    },
+    {
+        "word": "Young",
+        "synonyms": ["youthful", "juvenile", "adolescent", "youth", "tender"],
+        "antonyms": ["mature", "adult", "senior", "elderly"]
+  },
+  {
+        "word": "Zesty",
+        "synonyms": ["flavorful", "tangy", "spicy", "pungent", "piquant"],
+        "antonyms": ["bland", "tasteless", "insipid", "boring"]
+    },
+    {
+        "word": "Zilch",
+        "synonyms": ["nothing"],
+        "antonyms": ["something", "everything", "anything", "plenty"]
+   }
+]
