@@ -3,7 +3,6 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { incrementStrikes, incrementGameScreen, incrementHits, resetAll, setBad, setGood, loadInsults, loadPraises, decrementGameScreen, loadTrialWord } from './store';
 import WordSquares from './WordSquares';
-import RandomWordSquares from './RandomWordSquares';
 import StartScreen from './StartScreen';
 import Tutorial1 from './Tutorial1';
 import Tutorial2 from './Tutorial2';
@@ -34,27 +33,8 @@ function App() {
     }
   }, [gameScreen, dispatch]);
 
-  const handleIncrementStrikes = () => {
-    dispatch(incrementStrikes());
-    dispatch(setBad());
-  };
-
   const handleIncrementGameScreen = () => {
     dispatch(incrementGameScreen());
-  };
-
-  const handleReset = () => {
-    dispatch(resetAll());
-  };
-
-  // Increment strikes when an incorrect letter is clicked
-  const handleIncorrectClick = () => {
-    handleIncrementStrikes();
-  };
-
-  // Increment the game screen when the correct letter is clicked
-  const handleCorrectClick = () => {
-    handleIncrementGameScreen();
   };
 
   // Increment the game screen when a middle row box is clicked
@@ -80,11 +60,6 @@ function App() {
   const handleSpecialSquareClickWithStrikes = () => {
     dispatch(incrementStrikes());
     dispatch(decrementGameScreen());
-  };
-
-  const handleIncrementHits = () => {
-    dispatch(incrementHits());
-    dispatch(setGood());
   };
 
   // Determine the text of the reset button based on the current state
@@ -131,21 +106,6 @@ function App() {
         {buttonText}
       </button>
       <br />
-      {/* <button onClick={handleIncrementGameScreen} style={{ fontSize: '20px', padding: '5px 10px', backgroundColor: 'blue', color: 'white', margin: '10px' }}>
-        Increment GameScreen
-      </button>
-      <button onClick={handleIncrementHits} style={{ fontSize: '20px', padding: '5px 10px', backgroundColor: 'blue', color: 'white', margin: '10px' }}>
-        Increment Hits
-      </button>
-      <button onClick={handleIncrementStrikes} style={{ fontSize: '20px', padding: '5px 10px', backgroundColor: 'blue', color: 'white', margin: '10px' }}>
-        Increment Strikes
-      </button>
-      <h3>gameScreen: {gameScreen}</h3>
-      <h3>hits: {hits}</h3>
-      <h3>trialWord: {trialWord['word']}</h3>
-      <h3>synOrAnt: {trialWord['synOrAnt']}</h3>
-      <h3>gameWord: {trialWord['gameWord']}</h3>
-      <h3>status: {status}</h3> */}
     </div>
   );
 }

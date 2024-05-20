@@ -1,15 +1,8 @@
 // src/store.js
 import { configureStore, createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-// Helper function to check if the response is JSON
-const isJSONResponse = (response) => {
-  const contentType = response.headers.get('content-type');
-  return contentType && contentType.includes('application/json');
-};
-
 // Asynchronous thunk to load words from words.json
 export const loadTrialWord = createAsyncThunk('trialWord/loadTrialWord', async () => {
-
     const words = await require('./words.json');
     console.log(words)
     const randomWordObject = words[Math.floor(Math.random() * words.length)];
@@ -22,7 +15,6 @@ export const loadTrialWord = createAsyncThunk('trialWord/loadTrialWord', async (
       synOrAnt,
       gameWord
     };
-
 });
 
 // Trial word slice
