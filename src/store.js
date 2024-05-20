@@ -1,20 +1,28 @@
 // src/store.js
 import { configureStore, createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
+// Helper function to check if the response is JSON
+const isJSONResponse = (response) => {
+  const contentType = response.headers.get('content-type');
+  return contentType && contentType.includes('application/json');
+};
+
 // Asynchronous thunk to load words from words.json
 export const loadTrialWord = createAsyncThunk('trialWord/loadTrialWord', async () => {
-  const response = await fetch('/words.json');
-  const words = await response.json();
-  const randomWordObject = words[Math.floor(Math.random() * words.length)];
-  const synOrAnt = Math.random() < 0.5 ? 'Synonym' : 'Antonym';
-  const gameWord = synOrAnt === 'Synonym'
-    ? randomWordObject.synonyms[Math.floor(Math.random() * randomWordObject.synonyms.length)]
-    : randomWordObject.antonyms[Math.floor(Math.random() * randomWordObject.antonyms.length)];
-  return {
-    word: randomWordObject.word,
-    synOrAnt,
-    gameWord
-  };
+
+    const words = await require('./words.json');
+    console.log(words)
+    const randomWordObject = words[Math.floor(Math.random() * words.length)];
+    const synOrAnt = Math.random() < 0.5 ? 'Synonym' : 'Antonym';
+    const gameWord = synOrAnt === 'Synonym'
+      ? randomWordObject.synonyms[Math.floor(Math.random() * randomWordObject.synonyms.length)]
+      : randomWordObject.antonyms[Math.floor(Math.random() * randomWordObject.antonyms.length)];
+    return {
+      word: randomWordObject.word,
+      synOrAnt,
+      gameWord
+    };
+
 });
 
 // Trial word slice
@@ -36,13 +44,13 @@ let praises = [];
 
 // Asynchronous thunks to load JSON data
 const loadInsults = () => async (dispatch) => {
-  const response = await fetch('/insults.json');
-  insults = await response.json();
+    insults = require('./insults.json');
+    return insults
 };
 
 const loadPraises = () => async (dispatch) => {
-  const response = await fetch('/praises.json');
-  praises = await response.json();
+  praises = require('./praises.json');
+  return praises
 };
 
 // Status slice to handle message display
@@ -81,18 +89,17 @@ const gameScreenSlice = createSlice({
 
 // Hits slice
 const hitsSlice = createSlice({
-    name: 'hits',
-    initialState: 0,
-    reducers: {
-      increment: (state) => state + 1,
-      resetHits: () => 0,
-    },
-  });
+  name: 'hits',
+  initialState: 0,
+  reducers: {
+    increment: (state) => state + 1,
+    resetHits: () => 0,
+  },
+});
 
 const { increment: incrementStrikes, resetStrikes } = strikesSlice.actions;
 const { increment: incrementGameScreen, decrement: decrementGameScreen, resetGameScreen } = gameScreenSlice.actions;
 const { increment: incrementHits, resetHits } = hitsSlice.actions;
-
 
 // Combined reset action
 const resetAll = () => (dispatch) => {

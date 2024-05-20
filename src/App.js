@@ -130,8 +130,8 @@ function App() {
       <button onClick={handleButtonClick} style={{ fontSize: '24px', padding: '10px 20px', backgroundColor: 'red', color: 'white' }}>
         {buttonText}
       </button>
-      {/* <br />
-      <button onClick={handleIncrementGameScreen} style={{ fontSize: '20px', padding: '5px 10px', backgroundColor: 'blue', color: 'white', margin: '10px' }}>
+      <br />
+      {/* <button onClick={handleIncrementGameScreen} style={{ fontSize: '20px', padding: '5px 10px', backgroundColor: 'blue', color: 'white', margin: '10px' }}>
         Increment GameScreen
       </button>
       <button onClick={handleIncrementHits} style={{ fontSize: '20px', padding: '5px 10px', backgroundColor: 'blue', color: 'white', margin: '10px' }}>
