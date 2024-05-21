@@ -1,7 +1,7 @@
 // src/App.js
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { incrementStrikes, incrementGameScreen, incrementHits, resetAll, setBad, setGood, loadInsults, loadPraises, decrementGameScreen, loadTrialWord } from './store';
+import { incrementStrikes, incrementGameScreen, resetAll, loadInsults, loadPraises, decrementGameScreen, loadTrialWord } from './store';
 import WordSquares from './WordSquares';
 import StartScreen from './StartScreen';
 import Tutorial1 from './Tutorial1';
