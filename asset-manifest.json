@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/HUDDLE/static/css/main.b4d7108c.css",
+    "main.css": "/HUDDLE/static/css/main.88571c9e.css",
     "main.js": "/HUDDLE/static/js/main.9a46489e.js",
     "index.html": "/HUDDLE/index.html",
-    "main.b4d7108c.css.map": "/HUDDLE/static/css/main.b4d7108c.css.map",
+    "main.88571c9e.css.map": "/HUDDLE/static/css/main.88571c9e.css.map",
     "main.9a46489e.js.map": "/HUDDLE/static/js/main.9a46489e.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4d7108c.css",
+    "static/css/main.88571c9e.css",
     "static/js/main.9a46489e.js"
   ]
 }
