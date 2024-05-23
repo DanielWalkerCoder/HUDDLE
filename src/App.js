@@ -12,6 +12,7 @@ import Tutorial5 from './Tutorial5';
 import Tutorial6 from './Tutorial6';
 import Tutorial7 from './Tutorial7';
 import GameGrid from './GameGrid';
+import './styles.css';
 
 function App() {
   const strikes = useSelector((state) => state.strikes);
@@ -75,7 +76,7 @@ function App() {
         {gameScreen === 1 && trialWord['synOrAnt'] + ': ' + trialWord['word'].toUpperCase()}
       </h3>
       <h3 style={{ margin: '5px 0' }}>Strikes: {strikes}</h3>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div id='screen' style={{ display: 'flex', justifyContent: 'center' }}>
         {gameScreen === 1 && <GameGrid word={trialWord.gameWord.toUpperCase()} />}
         {gameScreen === 0 && <StartScreen onMiddleRowClick={handleMiddleRowClick} />}
         {gameScreen === -1 && <Tutorial1 onSpecialSquareClick={handleSpecialSquareClick} />}
@@ -87,7 +88,7 @@ function App() {
         {gameScreen === -7 && <Tutorial7 />}
       </div>
       <br />
-      <h3 style={{ margin: '5px 0', width: '45%', textAlign: 'center', marginLeft: 'auto', marginRight: 'auto' }}>
+      <h3 id='gameText'>
         {strikes === 3 && "Game Over. The answer is " + trialWord['gameWord'].toUpperCase() + '.'}
         {hits === 4 && "You win! The answer is " + trialWord['gameWord'].toUpperCase() + '.'}
         {(gameScreen === 1 && hits === 0 && strikes === 0) && "Choose a letter."}

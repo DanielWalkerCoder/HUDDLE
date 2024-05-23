@@ -1,0 +1,23 @@
+/* styles.css */
+
+/* Ensure #screen is never wider than the viewport width */
+#screen {
+    max-width: 100vw;
+  }
+
+/* Default styles for larger screens */
+#gameText {
+    width: 45%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 5px 0;
+  }
+  
+  /* Styles for mobile devices, iPads, and tablets */
+  @media screen and (max-width: 1024px) {
+    #gameText {
+      width: 100%;
+    }
+  }
+  
