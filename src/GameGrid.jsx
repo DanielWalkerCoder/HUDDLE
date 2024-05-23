@@ -116,7 +116,7 @@ const GameGrid = ({ word }) => {
   };
 
   return (
-    <div>
+    <div className='game-grid'>
       {grid.map((row, rowIndex) => (
         <div key={rowIndex} style={rowStyle}>
           {row.map((char, colIndex) => (
