@@ -1,11 +1,11 @@
 // src/StartScreen.jsx
 import React from 'react';
 
-const StartScreen = ({ onMiddleRowClick }) => {
+const StartScreen = ({ onMiddleRowClick, mode }) => {
   const squareStyle = {
     width: '50px',
     height: '50px',
-    border: '1px solid black',
+    border: `1px solid ${mode === 'night-mode' ? 'blue' : mode === 'gameBoy-mode' ? '#0f380f' : 'black'}`,
     display: 'inline-block',
     boxSizing: 'border-box',
     textAlign: 'center',

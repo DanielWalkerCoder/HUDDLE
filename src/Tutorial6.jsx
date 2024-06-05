@@ -1,7 +1,7 @@
 // src/Tutorial6.jsx
 import React from 'react';
 
-const Tutorial6 = ({ onSpecialSquareClick }) => {
+const Tutorial6 = ({ onSpecialSquareClick, mode }) => {
   const grid = [
     'SONXIQV',  // Row 1
     'CWPEUME',  // Row 2
@@ -19,18 +19,52 @@ const Tutorial6 = ({ onSpecialSquareClick }) => {
     '4:1', '4:2', '4:3', '4:4'                        // Blanks in the fifth row
   ]);
 
-  const squareStyle = {
+  const getColor = (rowIndex, colIndex) => {
+    if (rowIndex === 4 && colIndex === 6) {
+      if (mode === 'gameBoy-mode') {
+        return '#0f380f';
+      }
+      return 'green';
+     }
+    if (rowIndex === 4 && colIndex === 5) {
+      if (mode === 'gameBoy-mode') {
+        return '#0f380f';
+      }
+      return 'green';
+    }
+    if (rowIndex === 2 && colIndex === 3) {
+      if (mode === 'gameBoy-mode') {
+        return '#0f380f';
+      }
+      return 'green';
+    }
+    if (rowIndex === 4 && colIndex === 0) {
+      if (mode === 'gameBoy-mode') {
+        return '#0f380f';
+      }
+      return 'red';
+    }
+    if (rowIndex === 3 && colIndex === 2) {
+      if (mode === 'gameBoy-mode') {
+        return '#0f380f';
+      }
+      return 'red';
+    }
+  };
+
+  const squareStyle = (rowIndex, colIndex) => ({
     width: '50px',
     height: '50px',
-    border: '1px solid black',
+    border: `1px solid ${mode === 'night-mode' ? 'blue' : mode === 'gameBoy-mode' ? '#0f380f' : 'black'}`,
     display: 'inline-block',
     boxSizing: 'border-box',
     textAlign: 'center',
     lineHeight: '50px',
     fontSize: '24px',
     fontWeight: 'bold',
-    cursor: 'pointer'
-  };
+    cursor: 'pointer',
+    color: getColor(rowIndex, colIndex)
+  });
 
   const rowStyle = {
     display: 'flex',
@@ -49,7 +83,7 @@ const Tutorial6 = ({ onSpecialSquareClick }) => {
             return (
               <div
                 key={colIndex}
-                style={squareStyle}
+                style={squareStyle(rowIndex, colIndex)}
                 onClick={onClickHandler}
               >
                 {blankSquares.has(coordinate) ? '' : char}

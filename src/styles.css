@@ -24,6 +24,46 @@
   }
 }
 
+/* Night mode styles */
+.night-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.night-mode .grid-item {
+  border: 1px solid blue;
+}
+
+.night-mode .square {
+  border: 1px solid blue;
+}
+
+.night-mode .correct-letter {
+  color: #00ff00;
+}
+
+.night-mode .incorrect-letter {
+  color: #ff0000;
+}
+
+/* GameBoy mode styles */
+.gameBoy-mode {
+  background-color: #9bbc0f;
+  color: #0f380f;
+}
+
+.gameBoy-mode .game-grid-content {
+  background-color: #8bac0f;
+}
+
+.gameBoy-mode .grid-item {
+  border: 1px solid #0f380f;
+}
+
+.gameBoy-mode .square {
+  border: 1px solid #0f380f;
+}
+
 /* Animation for fading out letters */
 .fade-out {
   animation: fadeOut 0.5s forwards;

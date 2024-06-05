@@ -2,9 +2,8 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { incrementStrikes, incrementHits, setGood, setBad } from './store';
-import './styles.css';
 
-const GameGrid = ({ word }) => {
+const GameGrid = ({ word, mode }) => {
   const dispatch = useDispatch();
   const strikes = useSelector(state => state.strikes);
   const hits = useSelector(state => state.hits);
@@ -48,9 +47,7 @@ const GameGrid = ({ word }) => {
   }
 
   const [grid, setGrid] = useState(initialGrid);
-  const [correctIndexes, setCorrectIndexes] = useState([]);
-  const [incorrectIndexes, setIncorrectIndexes] = useState([]);
-  const [fadeOutIndexes, setFadeOutIndexes] = useState([]);
+  const [clickedLetters, setClickedLetters] = useState(Array.from({ length: numRows }, () => Array(numCols).fill(null)));
 
   const handleSquareClick = (rowIndex, colIndex) => {
     if (strikes >= 3 || hits >= 4) return;  // Prevent clicks if strikes is 3 or hits is 4
@@ -59,83 +56,71 @@ const GameGrid = ({ word }) => {
     const isCorrectLetter = word[colIndex] === letter;
 
     if (isCorrectLetter) {
-      dispatch(incrementHits());
-      if (gameScreen === 1) {
-        dispatch(setGood());
-      }
-
-      setCorrectIndexes([...correctIndexes, { row: rowIndex, col: colIndex }]);
-      const newGrid = grid.map(row => [...row]);
-
-      const newFadeOutIndexes = [];
-
-      // Collect indexes for incorrect letters in the current column to fade out
-      for (let row = 0; row < numRows; row++) {
-        if (newGrid[row][colIndex] !== word[colIndex] && newGrid[row][colIndex] !== null) {
-          newFadeOutIndexes.push({ row, col: colIndex });
+      const incorrectLettersInColumn = grid.filter((row, rIdx) => row[colIndex] !== word[colIndex] && row[colIndex] !== null);
+      if (incorrectLettersInColumn.length > 0) {
+        dispatch(incrementHits());
+        if (gameScreen === 1) {
+          dispatch(setGood());
         }
-      }
 
-      // Collect indexes for a random incorrect letter from each other column to fade out
-      for (let col = 0; col < numCols; col++) {
-        if (col !== colIndex) {
-          const incorrectLetters = [];
-          for (let row = 0; row < numRows; row++) {
-            if (newGrid[row][col] !== word[col] && newGrid[row][col] !== null) {
-              incorrectLetters.push({ row, col });
+        const newGrid = grid.map(row => [...row]);
+        const newClickedLetters = clickedLetters.map(row => [...row]);
+        newClickedLetters[rowIndex][colIndex] = 'correct';
+
+        // Remove incorrect letters in the current column
+        for (let row = 0; row < numRows; row++) {
+          if (newGrid[row][colIndex] !== word[colIndex]) {
+            newGrid[row][colIndex] = null;
+          }
+        }
+
+        // Remove a random incorrect letter from each other column
+        for (let col = 0; col < numCols; col++) {
+          if (col !== colIndex) {
+            const incorrectLetters = [];
+            for (let row = 0; row < numRows; row++) {
+              if (newGrid[row][col] !== word[col] && newGrid[row][col] !== null) {
+                incorrectLetters.push([row, col]);
+              }
+            }
+            if (incorrectLetters.length > 0) {
+              const [rowToClear, colToClear] = incorrectLetters[Math.floor(Math.random() * incorrectLetters.length)];
+              newGrid[rowToClear][colToClear] = null;
             }
           }
-          if (incorrectLetters.length > 0) {
-            const randomIndex = Math.floor(Math.random() * incorrectLetters.length);
-            newFadeOutIndexes.push(incorrectLetters[randomIndex]);
-          }
         }
+
+        setGrid(newGrid);
+        setClickedLetters(newClickedLetters);
       }
-
-      setFadeOutIndexes(newFadeOutIndexes);
-
-      // After a short delay, set the collected indexes to null
-      setTimeout(() => {
-        const finalGrid = newGrid.map(row => [...row]);
-        newFadeOutIndexes.forEach(({ row, col }) => {
-          finalGrid[row][col] = null;
-        });
-        setGrid(finalGrid);
-      }, 500);  // Match this duration with the CSS animation duration
     } else {
       dispatch(incrementStrikes());
-      setIncorrectIndexes([...incorrectIndexes, { row: rowIndex, col: colIndex }]);
       if (gameScreen === 1) {
         dispatch(setBad());
       }
+      const newClickedLetters = clickedLetters.map(row => [...row]);
+      newClickedLetters[rowIndex][colIndex] = 'incorrect';
+      setClickedLetters(newClickedLetters);
     }
   };
 
   const squareStyle = {
     width: '50px',
     height: '50px',
-    border: '1px solid black',
+    border: `1px solid ${mode === 'night-mode' ? 'blue' : mode === 'gameBoy-mode' ? '#0f380f' : 'black'}`,
     display: 'inline-block',
     boxSizing: 'border-box',
     textAlign: 'center',
     lineHeight: '50px',
     fontSize: '24px',
     fontWeight: 'bold',
-    cursor: 'pointer',
-    position: 'relative' // Ensure the text is positioned relative to the square
+    cursor: 'pointer'
   };
 
   const rowStyle = {
     display: 'flex',
     justifyContent: 'center',
     margin: '0'
-  };
-
-  const letterStyle = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)'
   };
 
   return (
@@ -145,23 +130,11 @@ const GameGrid = ({ word }) => {
           {row.map((char, colIndex) => (
             <div
               key={colIndex}
+              className={(mode !== 'gameBoy-mode' && clickedLetters[rowIndex][colIndex] === 'correct') ? 'correct-letter' : (mode !== 'gameBoy-mode' && clickedLetters[rowIndex][colIndex] === 'incorrect') ? 'incorrect-letter' : ''}
               style={squareStyle}
               onClick={() => handleSquareClick(rowIndex, colIndex)}
             >
-              <span
-                className={
-                  correctIndexes.some(index => index.row === rowIndex && index.col === colIndex)
-                    ? 'correct-letter'
-                    : incorrectIndexes.some(index => index.row === rowIndex && index.col === colIndex)
-                    ? 'incorrect-letter'
-                    : fadeOutIndexes.some(index => index.row === rowIndex && index.col === colIndex)
-                    ? 'fade-out'
-                    : ''
-                }
-                style={letterStyle}
-              >
-                {char}
-              </span>
+              {char}
             </div>
           ))}
         </div>

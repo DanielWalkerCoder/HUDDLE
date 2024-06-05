@@ -1,7 +1,7 @@
 // src/Tutorial2.jsx
 import React from 'react';
 
-const Tutorial2 = ({ onSpecialSquareClick }) => {
+const Tutorial2 = ({ onSpecialSquareClick, mode }) => {
   const grid = [
     'SONXIQV',
     'CWPEUME',
@@ -26,18 +26,28 @@ const Tutorial2 = ({ onSpecialSquareClick }) => {
   const isBlank = (rowIndex, colIndex) =>
     blankSquares.some(square => square.row - 1 === rowIndex && square.col - 1 === colIndex);
 
-  const squareStyle = {
+  const getColor = (rowIndex, colIndex) => {
+    if (rowIndex === 4 && colIndex === 6) {
+      if (mode === 'gameBoy-mode') {
+        return '#0f380f';
+      }
+      return 'green';
+    }
+  };
+
+  const squareStyle = (rowIndex, colIndex) => ({
     width: '50px',
     height: '50px',
-    border: '1px solid black',
+    border: `1px solid ${mode === 'night-mode' ? 'blue' : mode === 'gameBoy-mode' ? '#0f380f' : 'black'}`,
     display: 'inline-block',
     boxSizing: 'border-box',
     textAlign: 'center',
     lineHeight: '50px',
     fontSize: '24px',
     fontWeight: 'bold',
-    cursor: 'pointer'
-  };
+    cursor: 'pointer',
+    color: getColor(rowIndex, colIndex)
+  });
 
   const rowStyle = {
     display: 'flex'
@@ -50,7 +60,7 @@ const Tutorial2 = ({ onSpecialSquareClick }) => {
           {row.split('').map((char, colIndex) => (
             <div
               key={colIndex}
-              style={squareStyle}
+              style={squareStyle(rowIndex, colIndex)}
               onClick={
                 rowIndex === 4 && colIndex === 5 // 5th row, 6th column
                   ? onSpecialSquareClick
