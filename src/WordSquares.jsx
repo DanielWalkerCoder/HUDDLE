@@ -3,11 +3,14 @@
 import React from 'react';
 import './styles.css';
 
-const WordSquares = ({ word, toggleNormalMode, toggleNightMode, toggleGameBoyMode, resetGameScreenState, mode }) => {
+const WordSquares = ({ word, toggleNormalMode, toggleNightMode, toggleGameBoyMode, resetGameScreenState, navToTut, mode }) => {
   const handleSquareClick = (index) => {
     switch (index) {
       case 0:
         resetGameScreenState();
+        break;
+      case 1:
+        navToTut();
         break;
       case 3:
         toggleNormalMode();
@@ -23,6 +26,15 @@ const WordSquares = ({ word, toggleNormalMode, toggleNightMode, toggleGameBoyMod
     }
   };
 
+  const titles = [
+    "HUDDLE Start Screen (unavailable mid-game)",
+    "Uh...what? (How to Play) (only available from START screen)",
+    "Dunce's Gameplay (Story Mode) (currently unavailable)",
+    "Day Time Filter",
+    "Late Time Filter",
+    "Early Times Filter"
+  ];
+
   return (
     <div className="word-squares">
       {word.split('').map((letter, index) => (
@@ -30,6 +42,7 @@ const WordSquares = ({ word, toggleNormalMode, toggleNightMode, toggleGameBoyMod
           key={index}
           className={`square ${index >= 3 ? 'clickable' : ''}`}
           onClick={() => handleSquareClick(index)}
+          title={titles[index]}
           style={{ 
             display: 'inline-block',
             width: '50px',

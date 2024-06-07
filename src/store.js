@@ -3,8 +3,7 @@ import { configureStore, createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
 // Asynchronous thunk to load words from words.json
 export const loadTrialWord = createAsyncThunk('trialWord/loadTrialWord', async () => {
-    const words = await require('./words.json');
-    console.log(words)
+    const words = require('./words.json');
     const randomWordObject = words[Math.floor(Math.random() * words.length)];
     const synOrAnt = Math.random() < 0.5 ? 'Synonym' : 'Antonym';
     const gameWord = synOrAnt === 'Synonym'

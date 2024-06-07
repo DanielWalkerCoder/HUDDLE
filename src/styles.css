@@ -1,5 +1,12 @@
 /* styles.css */
 
+@font-face {
+  font-family: 'EarlyGameBoy';
+  src: url('./EarlyGameBoy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Ensure #screen and .game-grid fit within the viewport width */
 #screen, .game-grid {
   width: 100%;
@@ -50,6 +57,7 @@
 .gameBoy-mode {
   background-color: #9bbc0f;
   color: #0f380f;
+  font-family: 'EarlyGameBoy', cursive;
 }
 
 .gameBoy-mode .game-grid-content {
@@ -83,4 +91,8 @@
 /* Red color for incorrect letters */
 .incorrect-letter {
   color: red;
+}
+
+.incorrect-letter .gameBoy-mode{
+  color: #0f380f;
 }

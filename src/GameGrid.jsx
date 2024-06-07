@@ -1,13 +1,15 @@
 // src/GameGrid.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { incrementStrikes, incrementHits, setGood, setBad } from './store';
+import { incrementStrikes, incrementHits, setGood, setBad, resetAll, incrementGameScreen } from './store';
 
 const GameGrid = ({ word, mode }) => {
   const dispatch = useDispatch();
   const strikes = useSelector(state => state.strikes);
   const hits = useSelector(state => state.hits);
   const gameScreen = useSelector(state => state.gameScreen);
+  const trialWord = useSelector(state => state.trialWord);
+  const gameWord = trialWord.gameWord.toUpperCase();
   const numRows = 5;
   const numCols = word.length;
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -48,6 +50,12 @@ const GameGrid = ({ word, mode }) => {
 
   const [grid, setGrid] = useState(initialGrid);
   const [clickedLetters, setClickedLetters] = useState(Array.from({ length: numRows }, () => Array(numCols).fill(null)));
+
+  useEffect(() => {
+    if (hits >= 4) {
+      moveGameWordToCenterRow();
+    }
+  }, [hits]);
 
   const handleSquareClick = (rowIndex, colIndex) => {
     if (strikes >= 3 || hits >= 4) return;  // Prevent clicks if strikes is 3 or hits is 4
@@ -104,7 +112,30 @@ const GameGrid = ({ word, mode }) => {
     }
   };
 
-  const squareStyle = {
+  const handleMiddleRowClick = () => {
+    if (hits >= 4) {
+      dispatch(resetAll());
+      setTimeout(() => {
+        dispatch(incrementGameScreen());
+      }, 0);
+    }
+  };
+
+  const moveGameWordToCenterRow = () => {
+    const centerRow = Math.floor(numRows / 2);
+    const newGrid = Array.from({ length: numRows }, () => Array(numCols).fill(null));
+    for (let col = 0; col < numCols; col++) {
+      newGrid[centerRow][col] = gameWord[col];
+    }
+    setGrid(newGrid);
+    const newClickedLetters = Array.from({ length: numRows }, () => Array(numCols).fill(null));
+    for (let col = 0; col < numCols; col++) {
+      newClickedLetters[centerRow][col] = 'correct';
+    }
+    setClickedLetters(newClickedLetters);
+  };
+
+  const squareStyle = (rowIndex, colIndex) => ({
     width: '50px',
     height: '50px',
     border: `1px solid ${mode === 'night-mode' ? 'blue' : mode === 'gameBoy-mode' ? '#0f380f' : 'black'}`,
@@ -114,8 +145,17 @@ const GameGrid = ({ word, mode }) => {
     lineHeight: '50px',
     fontSize: '24px',
     fontWeight: 'bold',
-    cursor: 'pointer'
-  };
+    cursor: 'pointer',
+    color: mode === 'gameBoy-mode'
+      ? '#0f380f'
+      : clickedLetters[rowIndex][colIndex] === 'correct'
+      ? 'green'
+      : clickedLetters[rowIndex][colIndex] === 'incorrect'
+      ? 'red'
+      : mode === 'night-mode'
+      ? 'white'
+      : 'black'
+  });
 
   const rowStyle = {
     display: 'flex',
@@ -131,8 +171,8 @@ const GameGrid = ({ word, mode }) => {
             <div
               key={colIndex}
               className={(mode !== 'gameBoy-mode' && clickedLetters[rowIndex][colIndex] === 'correct') ? 'correct-letter' : (mode !== 'gameBoy-mode' && clickedLetters[rowIndex][colIndex] === 'incorrect') ? 'incorrect-letter' : ''}
-              style={squareStyle}
-              onClick={() => handleSquareClick(rowIndex, colIndex)}
+              style={squareStyle(rowIndex, colIndex)}
+              onClick={rowIndex === Math.floor(numRows / 2) && hits >= 4 ? handleMiddleRowClick : () => handleSquareClick(rowIndex, colIndex)}
             >
               {char}
             </div>
