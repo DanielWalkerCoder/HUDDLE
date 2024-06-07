@@ -5,45 +5,26 @@ const Tutorial7 = ({ mode }) => {
   const grid = [
     'SONXIQV',  // Row 1
     'CWPEUME',  // Row 2
-    'BANSYHU',  // Row 3
+    'CONSULT',  // Row 3
     'OZAUKCZ',  // Row 4
     'NTJIRLT'   // Row 5
   ];
 
   // Define blank squares using zero-based indexing for rows and columns
   const blankSquares = new Set([
-    '0:0', '0:2', '0:3', '0:4', '0:5', '0:6',  // Blanks in the first row
-    '1:1', '1:2', '1:3', '1:5', '1:6',         // Blanks in the second row
-    '2:0', '2:1', '2:4', '2:5', '2:6',         // Blanks in the third row
+    '0:0', '0:1', '0:2', '0:3', '0:4', '0:5', '0:6',  // Blanks in the first row
+    '1:0', '1:1', '1:2', '1:3', '1:4', '1:5', '1:6',         // Blanks in the second row
     '3:0', '3:1', '3:2', '3:3', '3:4', '3:5', '3:6',  // Adjusted blanks in the fourth row
-    '4:0', '4:1', '4:2', '4:3', '4:4'        // Adjusted blanks in the fifth row
+    '4:0', '4:1', '4:2', '4:3', '4:4', '4:5', '4:6'        // Adjusted blanks in the fifth row
   ]);
 
   const getColor = (rowIndex, colIndex) => {
-    if (rowIndex === 4 && colIndex === 6) {
+    if (rowIndex === 2) {
       if (mode === 'gameBoy-mode') {
         return '#0f380f';
       }
       return 'green';
      }
-    if (rowIndex === 1 && colIndex === 0) {
-      if (mode === 'gameBoy-mode') {
-        return '#0f380f';
-      }
-      return 'green';
-    }
-    if (rowIndex === 4 && colIndex === 5) {
-      if (mode === 'gameBoy-mode') {
-        return '#0f380f';
-      }
-      return 'green';
-    }
-    if (rowIndex === 2 && colIndex === 3) {
-      if (mode === 'gameBoy-mode') {
-        return '#0f380f';
-      }
-      return 'green';
-    }
   };
 
   const squareStyle = (rowIndex, colIndex) => ({
