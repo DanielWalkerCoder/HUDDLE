@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/HUDDLE/static/css/main.319b5ac9.css",
-    "main.js": "/HUDDLE/static/js/main.756f37ae.js",
+    "main.css": "/HUDDLE/static/css/main.fda589d7.css",
+    "main.js": "/HUDDLE/static/js/main.4387eb1a.js",
+    "static/media/EarlyGameBoy.ttf": "/HUDDLE/static/media/EarlyGameBoy.d9d11b3df42d741aaf14.ttf",
     "index.html": "/HUDDLE/index.html",
-    "main.319b5ac9.css.map": "/HUDDLE/static/css/main.319b5ac9.css.map",
-    "main.756f37ae.js.map": "/HUDDLE/static/js/main.756f37ae.js.map"
+    "main.fda589d7.css.map": "/HUDDLE/static/css/main.fda589d7.css.map",
+    "main.4387eb1a.js.map": "/HUDDLE/static/js/main.4387eb1a.js.map"
   },
   "entrypoints": [
-    "static/css/main.319b5ac9.css",
-    "static/js/main.756f37ae.js"
+    "static/css/main.fda589d7.css",
+    "static/js/main.4387eb1a.js"
   ]
 }
