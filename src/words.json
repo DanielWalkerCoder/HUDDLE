@@ -1,144 +1,116 @@
 [
   {
-    "word": "Alive",
-    "synonyms": ["lively", "quick", "alert", "awake", "vibrant"],
-    "antonyms": ["inert", "asleep", "lifeless"]
+    "synonyms": ["Alive", "Living", "Breathing", "Animated", "Active", "Vital", "Existing", "Energetic", "Lively", "Awake", "Vibrant"],
+    "antonyms": ["Dead", "Lifeless", "Deceased", "Inanimate", "Dormant", "Extinct", "Nonexistent", "Unconscious", "Defunct", "Expired"]
   },
   {
-    "word": "Anger",
-    "synonyms": ["wrath", "indignation"],
-    "antonyms": ["peace", "serenity", "contentment"]
+    "synonyms": ["Anger", "Rage", "Fury", "Wrath", "Annoyance", "Irritation", "Indignation", "Exasperation", "Resentment", "Outrage"],
+    "antonyms": ["Calmness", "Peace", "Serenity", "Tranquility", "Patience", "Contentment", "Happiness", "Pleasure", "Delight"]
+  },
+  { 
+    "synonyms": ["Arrow", "shaft", "missile", "dart", "bolt", "projectile"],
+    "antonyms": ["shield", "target", "armor", "defense", "guard", "protection"]
   },
   {
-    "word": "Apple",
-    "synonyms": ["fruit", "pomme", "orchard", "snack", "produce"],
-    "antonyms": ["bread", "salty", "protein", "dairy"]
+    "synonyms": ["Angel", "seraph", "fairy", "spirit", "cherub", "divine", "heavenly", "guardian", "messenger"],
+    "antonyms": ["demon", "devil", "hellion", "fiend", "hellish", "malevolent"]
   },
   {
-    "word": "Arrow",
-    "synonyms": ["shaft", "missile", "projectile"],
-    "antonyms": ["shield", "defense", "guard", "protection", "safety"]
+    "synonyms": ["Ample", "Abundant", "Plentiful", "Sufficient", "Generous", "Copious", "Lavish", "Profuse", "Bountiful", "Substantial"],
+    "antonyms": ["Insufficient", "Scarce", "Meager", "Sparse", "Inadequate", "Limited", "Scanty", "Bare", "Minimal", "Deficient"]
   },
   {
-    "word": "Angel",
-    "synonyms": ["fairy", "spirit", "cherub", "divine", "heavenly"],
-    "antonyms": ["demon", "devil", "fiend", "hellish", "malevolent"]
+    "synonyms": ["Acute", "Sharp", "Keen", "Intense", "Severe", "Penetrating", "Perceptive", "Critical", "Fierce", "Pointed"],
+    "antonyms": ["Dull", "Blunt", "Mild", "Moderate", "Diminished", "Weak", "Soft", "Obtuse", "Unperceptive", "Insensitive"]
   },
   {
-    "word": "Ample",
-    "synonyms": ["plentiful", "abundant", "sufficient", "copious", "plenty"],
-    "antonyms": ["scarce", "insufficient", "meager", "inadequate", "sparse"]
+    "synonyms": ["Abode", "Home", "Residence", "Dwelling", "Habitat", "House", "Lodging", "Quarters", "Domicile", "Place"],
+    "antonyms": ["Homelessness", "Displacement", "Eviction", "Vagrancy", "Unsettled"]
   },
   {
-    "word": "Acute",
-    "synonyms": ["sharp", "penetrating", "intense", "severe"],
-    "antonyms": ["blunt", "gradual", "chronic"]
+    "synonyms": ["Aloof", "Distant", "Detached", "Reserved", "Indifferent", "Unapproachable", "Remote", "Standoffish", "Withdrawn", "Cool"],
+    "antonyms": ["Friendly", "Approachable", "Warm", "Sociable", "Engaged", "Open", "Involved", "Cordial", "Affable", "Familiar"]
   },
   {
-    "word": "Abode",
-    "synonyms": ["dwelling", "residence", "house", "habitat"],
-    "antonyms": ["homeless", "transient", "vagrant", "roaming"]
+    "synonyms": ["Adapt", "Adjust", "Modify", "Acclimate", "Conform", "Customize", "Revise", "Tailor", "Alter", "Change"],
+    "antonyms": ["Resist", "Reject", "Neglect", "Maintain", "Preserve", "Keep", "Oppose", "Stagnate", "Unfit", "Disregard"]
   },
   {
-    "word": "Aloof",
-    "synonyms": ["distant", "reserved", "detached", "remote", "withdrawn"],
-    "antonyms": ["friendly", "sociable", "approachable", "engaging"]
+    "synonyms": ["Alias", "Pseudonym", "Nickname", "Moniker", "Handle"],
+    "antonyms": ["Identity", "Name"]
   },
   {
-    "word": "Adapt",
-    "synonyms": ["adjust", "modify", "alter", "change", "evolve"],
-    "antonyms": ["maintain", "preserve", "retain", "stagnate"]
+    "synonyms": ["Amend", "Revise", "Modify", "Alter", "Correct", "Adjust", "Improve", "Rectify", "Update", "Change"],
+    "antonyms": ["Worsen", "Damage", "Harm", "Spoil", "Corrupt", "Degrade", "Deteriorate", "Impede", "Injure", "Wreck"]
   },
   {
-    "word": "Alias",
-    "synonyms": ["false", "pseudonym", "nickname", "moniker", "alternative"],
-    "antonyms": ["genuine", "authentic", "actual"]
+    "synonyms": ["Annex", "Attach", "Append", "Join", "Affix", "Include", "Incorporate", "Integrate", "Combine"],
+    "antonyms": ["Detach", "Remove", "Separate", "Exclude", "Subtract", "Disjoin", "Divide", "Segregate", "Disconnect", "Withdraw"]
   },
   {
-    "word": "Amend",
-    "synonyms": ["repair", "correct", "rectify", "revise"],
-    "antonyms": ["damage", "destroy", "impair", "worsen"]
+    "synonyms": ["Awake", "Alert", "Wakeful", "Conscious", "Roused", "Vigilant", "Attentive", "Aware", "Revived", "Activated"],
+    "antonyms": ["Asleep", "Unconscious", "Drowsy", "Sleepy", "Inactive", "Sluggish", "Unaware", "Dormant", "Lethargic", "Napping"]
   },
   {
-    "word": "Annex",
-    "synonyms": ["attach", "append", "connect"],
-    "antonyms": ["remove", "detach", "disconnect", "separate", "divide"]
+    "synonyms": ["Avoid", "Evade", "Elude", "Dodge", "Shun", "Sidestep", "Circumvent", "Escape", "Bypass", "Eschew"],
+    "antonyms": ["Confront", "Face", "Encounter", "Meet", "Engage", "Address", "Pursue", "Seek", "Welcome", "Approach"]
   },
   {
-    "word": "Awake",
-    "synonyms": ["alert", "aware", "conscious", "vigilant", "awakened"],
-    "antonyms": ["asleep", "unconscious", "oblivious", "drowsy", "unaware"]
+    "synonyms": ["Amuse", "Entertain", "Delight", "Cheer", "Divert", "Enthrall", "Engage", "Captivate", "Humor", "Charm"],
+    "antonyms": ["Bore", "Disinterest", "Tire", "Weary", "Annoy", "Irritate", "Offend", "Displease", "Disgust", "Dishearten"]
   },
   {
-    "word": "Avoid",
-    "synonyms": ["evade", "dodge", "escape", "elude"],
-    "antonyms": ["confront", "encounter", "confrontation", "embrace"]
+    "synonyms": ["Affix", "Attach", "Fasten", "Secure", "Anchor", "Stick", "Adhere", "Append", "Bind", "Join"],
+    "antonyms": ["Detach", "Remove", "Unfasten", "Separate", "Loosen", "Disjoin", "Disconnect", "Unstick", "Unbind", "Extract"]
   },
   {
-    "word": "Amuse",
-    "synonyms": ["entertain", "delight", "charm", "please", "captivate"],
-    "antonyms": ["irritate", "annoy", "dissatisfy", "displease"]
+    "synonyms": ["Aloft", "Above", "Overhead", "Skyward", "High", "Elevated", "Upward", "Raised", "Aerial"],
+    "antonyms": ["Below", "Down", "Under", "Beneath", "Lower", "Subterranean", "Grounded", "Underneath", "Downward"]
   },
   {
-    "word": "Affix",
-    "synonyms": ["attach", "fasten", "stick", "connect"],
-    "antonyms": ["detach", "remove", "unfasten", "separate", "disconnect"]
+    "synonyms": ["Adept", "Skilled", "Proficient", "Expert", "Talented", "Capable", "Competent", "Accomplished", "Masterful", "Adroit"],
+    "antonyms": ["Inept", "Unskilled", "Incompetent", "Amateur", "Clumsy", "Unproficient", "Unqualified", "Inexperienced", "Incipient", "Unadept"]
   },
   {
-    "word": "Aloft",
-    "synonyms": ["above", "elevated", "skyward", "upward"],
-    "antonyms": ["below", "beneath", "under"]
+    "synonyms": ["Alarm", "Alert", "Warning", "Fear", "Panic", "Dismay", "Apprehension", "Shock", "Terror", "Consternation"],
+    "antonyms": ["Calm", "Composure", "Peace", "Reassurance", "Tranquility", "Serenity", "Security", "Confidence", "Ease", "Relief"]
   },
   {
-    "word": "Adept",
-    "synonyms": ["skilled", "expert", "proficient", "capable", "talented"],
-    "antonyms": ["novice", "beginner", "inexperienced", "unskilled", "amateur"]
+    "synonyms": ["Bloom", "Blossom", "Flower", "Flourish", "Prosper", "Thrive", "Develop", "Unfold", "Sprout"],
+    "antonyms": ["Wither", "Fade", "Wilt", "Decline", "Deteriorate", "Shrivel", "Decay", "Perish", "Droop"]
   },
   {
-    "word": "Alarm",
-    "synonyms": ["alert", "warning", "signal", "siren"],
-    "antonyms": ["peace", "serenity", "tranquility", "quiet"]
+    "synonyms": ["Blend", "Combine", "Fuse", "Mingle", "Merge", "Unite", "Integrate", "Amalgamate", "Harmonize"],
+    "antonyms": ["Separate", "Divide", "Split", "Isolate", "Disjoin", "Partition", "Unmix", "Segregate", "Disunite", "Break"]
   },
   {
-    "word": "Bloom",
-    "synonyms": ["flower", "blossom", "bloom", "blossom", "flourish"],
-    "antonyms": ["decay", "wither", "deteriorate"]
+    "synonyms": ["Brain", "Mind", "Intellect", "Cerebrum", "Intelligence", "Head", "Cognition", "Wits", "Smarts"],
+    "antonyms": ["Stupidity", "Ignorance", "Foolishness", "Simplicity", "Dullness", "Denseness", "Imbecility", "Insensitivity", "Obliviousness", "Mindlessness"]
   },
   {
-    "word": "Blend",
-    "synonyms": ["merge", "combine", "unite"],
-    "antonyms": ["separate", "divide", "detach", "split", "disunite"]
+    "synonyms": ["Baker", "Confectioner", "Patissier", "Chef", "Cook"],
+    "antonyms": ["Customer", "Patron", "Buyer", "Consumer", "Client", "Diner", "Eater", "Guest", "Recipient", "Beneficiary"]
+  }
+  ,
+  {
+    "synonyms": ["Burst", "Explode", "Rupture", "Break", "Shatter", "Detonate", "Fracture", "Erupt", "Crack"],
+    "antonyms": ["Mend", "Repair", "Seal", "Heal", "Close", "Patch", "Bind", "Contain", "Hold"]
   },
   {
-    "word": "Brain",
-    "synonyms": ["intellect", "cognition", "intellectual", "brainpower"],
-    "antonyms": ["brawn", "physical", "muscle", "strength"]
-  },
+    "synonyms": ["Belly", "Abdomen", "Stomach", "Tummy", "Midsection", "Paunch", "Torso", "Waist", "Girth"],
+    "antonyms": ["Back", "Spine", "Rear", "Dorsum", "Posterior", "Vertebrae", "Ridge", "Backbone", "Buttocks"]
+  }
+  ,
   {
-    "word": "Baker",
-    "synonyms": ["pastry", "confectioner", "patisserie"],
-    "antonyms": ["customer", "diner", "guest", "client", "patron"]
-  },
+    "synonyms": ["Bough", "Branch", "Limb", "Twig", "Offshoot", "Sprig", "Shoot", "Stem", "Extension"],
+    "antonyms": ["Trunk", "Root", "Base", "Foundation", "Core", "Stalk", "Support"]
+  }
+  ,
   {
-    "word": "Burst",
-    "synonyms": ["explode", "burst", "rupture", "split", "shatter"],
-    "antonyms": ["contain", "restrain", "control", "suppress", "restrain"]
-  },
-  {
-    "word": "Belly",
-    "synonyms": ["stomach", "abdomen", "tummy", "paunch"],
-    "antonyms": ["spine", "backbone", "vertebrae"]
-  },
-  {
-    "word": "Bough",
-    "synonyms": ["branch", "bough"],
-    "antonyms": ["trunk", "center"]
-  },
-  {
-    "word": "Badge",
-    "synonyms": ["emblem", "insignia", "medal", "decoration"],
-    "antonyms": ["dishonor", "disgrace", "shame", "stigma", "blemish"]
-  },
+    "synonyms": ["Badge", "Emblem", "Insignia", "Symbol", "Medal", "Marker", "Token", "Crest", "Sign"],
+    "antonyms": ["Disguise", "Camouflage", "Cover", "Concealment", "Obscurity", "Ambiguity", "Anonymity", "Inconspicuousness", "Unrecognizability", "Unremarkability"]
+  }
+  ,
   {
     "word": "Brush",
     "synonyms": ["sweep", "scrub", "clean", "brush", "scrub"],
@@ -949,9 +921,9 @@
         "synonyms": ["flavorful", "tangy", "spicy", "pungent", "piquant"],
         "antonyms": ["bland", "tasteless", "insipid", "boring"]
     },
-    {
-        "word": "Zilch",
-        "synonyms": ["nothing"],
-        "antonyms": ["something", "everything", "anything", "plenty"]
-   }
+  {
+    "word": "Zilch",
+    "synonyms": ["nothing"],
+    "antonyms": ["something", "everything", "anything", "plenty"]
+  }
 ]

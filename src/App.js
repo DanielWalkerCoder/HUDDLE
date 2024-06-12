@@ -1,7 +1,7 @@
 // src/App.js
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { incrementStrikes, incrementGameScreen, resetAll, loadInsults, loadPraises, decrementGameScreen, loadTrialWord, resetGameScreen } from './store';
+import { incrementStrikes, incrementGameScreen, resetAll, loadInsults, loadPraises, decrementGameScreen, loadTrialWord, resetGameScreen, incrementCurrentWinStreak, resetCurrentWinStreak, incrementHighestWinStreak } from './store';
 import WordSquares from './WordSquares';
 import StartScreen from './StartScreen';
 import Tutorial1 from './Tutorial1';
@@ -18,6 +18,8 @@ function App() {
   const [mode, setMode] = useState('normal');
   const strikes = useSelector((state) => state.strikes);
   const gameScreen = useSelector((state) => state.gameScreen);
+  const currentWinStreak = useSelector((state) => state.currentWinStreak);
+  const highestWinStreak = useSelector((state) => state.highestWinStreak);
   const status = useSelector((state) => state.status);
   const hits = useSelector(state => state.hits);
   const trialWord = useSelector(state => state.trialWord);
@@ -34,6 +36,24 @@ function App() {
       dispatch(loadTrialWord());
     }
   }, [gameScreen, dispatch]);
+
+  useEffect(() => {
+    if (hits === 4) {
+      dispatch(incrementCurrentWinStreak());
+    }
+  }, [hits, dispatch]);
+
+  useEffect(() => {
+    if (currentWinStreak > highestWinStreak) {
+      dispatch(incrementHighestWinStreak());
+    }
+  }, [currentWinStreak, highestWinStreak, dispatch]);
+
+  useEffect(() => {
+    if (strikes === 3) {
+      dispatch(resetCurrentWinStreak());
+    }
+  }, [strikes, dispatch]);
 
   const handleIncrementGameScreen = () => {
     dispatch(incrementGameScreen());
@@ -99,7 +119,12 @@ function App() {
         navToTut={navToTut}
         mode = {mode}
       />
-      <br />
+      <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+        <div>Current Win Streak: {currentWinStreak}</div>
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+        <div>Highest Win Streak: {highestWinStreak}</div>
+      </div>
       <h3 style={{ margin: '10px 0 5px' }}>
         {gameScreen === 0 && "A game of synonyms and antonyms"}
         {gameScreen < 0 && "Synonym: HUDDLE"}
